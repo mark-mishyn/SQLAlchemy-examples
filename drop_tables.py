@@ -1,4 +1,4 @@
-from models import User, Email, engine
+from examples.models import User, Email, engine
 
 for model in (User, Email):
     try:

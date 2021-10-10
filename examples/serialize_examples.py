@@ -1,6 +1,6 @@
 from pprint import pprint
 
-from models import session, User, Email
+from examples.models import session, User, Email
 from schemas import UserSchema, AddressSchema
 
 user = session.query(User).get(1)

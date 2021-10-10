@@ -1,7 +1,7 @@
 from marshmallow_sqlalchemy import SQLAlchemyAutoSchema
 from marshmallow_sqlalchemy.fields import Nested
 
-from models import Email, User
+from examples.models import Email, User
 
 
 class UserFlatSchema(SQLAlchemyAutoSchema):

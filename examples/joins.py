@@ -36,14 +36,14 @@ session = sessionmaker(bind=engine)()
 Base.metadata.create_all(engine)
 
 
-a = User(name='Eduard')
-session.add(a)
-session.add(Email(email='test1@example.net', user=a))
-session.add(Email(email='test2@example.com', user=a))
+ed = User(name='Eduard')
+session.add(ed)
+session.add(Email(email='test1@example.net', user=ed))
+session.add(Email(email='test2@example.com', user=ed))
 
-b = User(name='Pedro')
-session.add(Email(email='test3@example.net', user=b))
-session.add(Email(email='test4@example.com', user=b))
+pedro = User(name='Pedro')
+session.add(Email(email='test3@example.net', user=pedro))
+session.add(Email(email='test4@example.com', user=pedro))
 
 session.commit()
 

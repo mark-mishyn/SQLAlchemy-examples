@@ -88,6 +88,5 @@ session.delete(u)
 
 session.commit()
 
-print(1111111)
 print_users()
 

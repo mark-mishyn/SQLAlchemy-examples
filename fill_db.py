@@ -1,6 +1,6 @@
 import random
 
-from models import User, Email, session
+from examples.models import User, Email, session
 from utils import get_random_string
 
 # delete rows
