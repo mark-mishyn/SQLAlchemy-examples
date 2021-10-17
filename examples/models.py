@@ -40,6 +40,6 @@ class Email(Base):
 
 
 Session = sessionmaker(bind=engine)
-session = Session()
+db_session = Session()
 Base.metadata.create_all(engine)
 
