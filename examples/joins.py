@@ -54,8 +54,8 @@ print('emails:::', session.query(Email).count())
 
 def example_1():
     """SELECT ... FROM emails JOIN users"""
-    for e, u in session.query(Email, User).join(User):
-        print(e.email, u.name)
+    for email, user in session.query(Email, User).join(User):
+        print(email.email, user.name)
 
 
 def example_2():
@@ -89,8 +89,6 @@ def example_5():
 
 def example_6():
     """Filter emails by users"""
-    for a in session.query(Email).join(Email.user).filter(User.name == 'Pedro'):
-        print(a)
+    for email in session.query(Email).join(Email.user).filter(User.name == 'Pedro'):
+        print(email)
 
-
-example_6()
